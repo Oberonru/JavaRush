@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task05.task0518"
-
-Регистрируем собачек
+taskKey="com.javarush.task.task05.task0518"\n\nРегистрируем собачек
 
 Создать класс Dog (собака) с тремя конструкторами:
 - Имя

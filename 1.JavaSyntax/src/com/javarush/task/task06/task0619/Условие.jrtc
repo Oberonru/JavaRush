@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task06.task0619"
-
-Три статические переменных name
+taskKey="com.javarush.task.task06.task0619"\n\nТри статические переменных name
 
 Добавь 3 public статических переменных: String Solution.name, String Cat.name, String Dog.name.
 

@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task06.task0617"
-
-Блокнот для новых идей
+taskKey="com.javarush.task.task06.task0617"\n\nБлокнот для новых идей
 
 1. В классе Solution создать public static класс Idea
 2. В классе Idea создать метод public String getDescription(), который будет возвращать любой непустой текст

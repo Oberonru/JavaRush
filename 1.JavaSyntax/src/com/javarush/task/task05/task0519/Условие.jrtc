@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task05.task0519"
-
-Ходим по кругу
+taskKey="com.javarush.task.task05.task0519"\n\nХодим по кругу
 
 Создать класс (Circle) круг, с тремя конструкторами:
 - centerX, centerY, radius

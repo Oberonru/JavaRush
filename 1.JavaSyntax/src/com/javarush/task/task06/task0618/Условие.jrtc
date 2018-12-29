@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task06.task0618"
-
-KissMyShinyMetalAss
+taskKey="com.javarush.task.task06.task0618"\n\nKissMyShinyMetalAss
 
 Создай класс с именем KissMyShinyMetalAss. Создай объект этого класса, выведи его на экран.
 

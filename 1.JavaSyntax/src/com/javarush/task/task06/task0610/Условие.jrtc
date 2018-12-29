@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task06.task0610"
-
-Класс ConsoleReader
+taskKey="com.javarush.task.task06.task0610"\n\nКласс ConsoleReader
 
 Сделать класс ConsoleReader, у которого будут 4 статических метода:
 String readString() – читает с клавиатуры строку

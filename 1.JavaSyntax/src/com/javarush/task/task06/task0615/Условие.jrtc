@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task06.task0615"
-
-Феншуй и статики
+taskKey="com.javarush.task.task06.task0615"\n\nФеншуй и статики
 
 Переставь один модификатор static, чтобы пример скомпилировался.
 
