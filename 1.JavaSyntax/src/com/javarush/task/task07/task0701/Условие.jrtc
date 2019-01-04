@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task07.task0701"
-
-Массивный максимум
+taskKey="com.javarush.task.task07.task0701"\n\nМассивный максимум
 
 1. В методе initializeArray():
 1.1. Создайте массив на 20 чисел

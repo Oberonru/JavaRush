@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task07.task0711"
-
-Удалить и вставить
+taskKey="com.javarush.task.task07.task0711"\n\nУдалить и вставить
 
 1. Создай список строк.
 2. Добавь в него 5 строк с клавиатуры.
