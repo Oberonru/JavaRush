@@ -3,7 +3,17 @@ package com.javarush.task.task08.task0805;
 import java.util.HashMap;
 import java.util.Map;
 
-/* 
+/**
+ * а экране — значения!
+ * Есть коллекция HashMap<String, String>, туда занесли 10 различных строк.
+ * Вывести на экран список значений, каждый элемент с новой строки.
+ *
+ *
+ * Требования:
+ * 1. Программа должна создавать переменную коллекции HashMap с типом элементов String, String. Переменная должна быть сразу проинициализирована.
+ * 2. Программа не должна считывать значения с клавиатуры.
+ * 3. Программа должна добавлять в коллекцию 10 различных строк, согласно условию.
+ * 4. Метод printValues() должен выводить на экран список значений коллекции, каждый элемент с новой строки.
 На экране — значения!
 */
 
@@ -25,6 +35,9 @@ public class Solution {
     }
 
     public static void printValues(Map<String, String> map) {
-        //напишите тут ваш код
+        for (Map.Entry<String, String> mapka : map.entrySet())  {
+
+            System.out.println( mapka.getValue());
+        }
     }
 }
