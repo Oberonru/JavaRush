@@ -1,8 +1,22 @@
 package com.javarush.task.task09.task0928;
 
 import java.io.*;
+import java.io.InputStream;
+import java.io.OutputStream;
 
-/* 
+/**
+ * Код не компилится…
+ * Программа вводит два имени файла. И копирует первый файл на место заданное вторым именем.
+ *
+ *
+ * Требования:
+ * 1. Программа должна считывать имена файлов.
+ * 2. Метод getInputStream изменять нельзя.
+ * 3. Метод getOutputStream изменять нельзя.
+ * 4. Программа должна копировать содержимое первого файла во второй.
+ * 5. Программа должна выводить количество скопированных байт.
+ * 6. Метод main должен вызывать метод getInputStream.
+ * 7. Метод main должен вызывать метод getOutputStream.
 Код не компилится…
 */
 
@@ -13,11 +27,11 @@ public class Solution {
         String sourceFileName = reader.readLine();
         String destinationFileName = reader.readLine();
 
-        InputStream fileInputStream = getOutputStream(destinationFileName);
-        InputStream fileOutputStream = getOutputStream(destinationFileName);
+        InputStream fileInputStream = getInputStream(sourceFileName);
+        OutputStream fileOutputStream = getOutputStream(destinationFileName);
 
         int count = 0;
-        while (fileInputStream.available() > 0) ;
+        while (fileInputStream.available() > 0)
         {
             int data = fileInputStream.read();
             fileOutputStream.write(data);
