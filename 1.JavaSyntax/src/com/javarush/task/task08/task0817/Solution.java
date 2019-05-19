@@ -1,5 +1,6 @@
 package com.javarush.task.task08.task0817;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,16 +35,14 @@ public class Solution {
     }
 
     public static void removeTheFirstNameDuplicates(Map<String, String> map) {
-
-
+        removeItemFromMapByValue(map,null);
 
     }
 
     public static void removeItemFromMapByValue(Map<String, String> map, String value) {
         HashMap<String, String> copy = new HashMap<String, String>(map);
         for (Map.Entry<String, String> pair : copy.entrySet()) {
-            if (pair.getValue().equals(value))
-                map.remove(pair.getKey());
+           if (Collections.frequency(pair.getValue())
         }
     }
 
