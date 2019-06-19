@@ -5,20 +5,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/*
+/* 
 Читаем и пишем в файл: Human
 */
 public class Solution {
     public static void main(String[] args) {
         //исправьте outputStream/inputStream в соответствии с путем к вашему реальному файлу
         try {
-            File your_file_name = File.createTempFile("your_file_name", null);
+            File your_file_name = new File("C:\\projects\\ntext.txt");
             OutputStream outputStream = new FileOutputStream(your_file_name);
             InputStream inputStream = new FileInputStream(your_file_name);
 
             Human ivanov = new Human("Ivanov", new Asset("home", 999_999.99), new Asset("car", 2999.99));
             ivanov.save(outputStream);
             outputStream.flush();
+            outputStream.close();
 
             Human somePerson = new Human();
             somePerson.load(inputStream);
@@ -68,10 +69,30 @@ public class Solution {
 
         public void save(OutputStream outputStream) throws Exception {
             //implement this method - реализуйте этот метод
+            PrintWriter printWriter = new PrintWriter(outputStream);
+            printWriter.println(name);
+            if (assets.size() != 0 && !name.isEmpty()) {
+                for (Asset asset : assets) {
+                    printWriter.println(asset.getName());
+                    Double price = asset.getPrice();
+                    printWriter.println(price);
+                }
+            } else {
+                System.out.println("");
+            }
+            printWriter.close();
         }
 
         public void load(InputStream inputStream) throws Exception {
-            //implement this method - реализуйте этот метод
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            name = reader.readLine();
+            assets = new ArrayList<Asset>();
+            while (reader.ready()) {
+                String assetName = reader.readLine();
+                Double assetPrice = Double.parseDouble(reader.readLine());
+                assets.add(new Asset(assetName, assetPrice));
+            }
+            reader.close();
         }
     }
 }
